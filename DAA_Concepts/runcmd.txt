@@ -1,0 +1,3 @@
+gcc _.c -o a && ./a
+
+g++ _.cpp -o a && ./a
