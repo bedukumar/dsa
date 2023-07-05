@@ -11,6 +11,12 @@ var timeLimit = function(fn, t) {
             },t)
         })
         return Promise.race([fn(...args),timeoutPromise])
+/**
+	 return await Promise.race([
+	            new Promise(resolve => resolve(fn(...args))),
+	            new Promise((_, reject) => setTimeout(() => reject("Time Limit Exceeded"), t))
+	 ]);
+ */
     }
 };
 
