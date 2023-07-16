@@ -1,8 +1,8 @@
 def heapify(l,n,i):
     parent,left,right=i,2*i,2*i+1
-    if left < n and l[parent] < l[left]:
+    if left <= n and l[parent] < l[left]:
         parent = left
-    if right < n and l[parent] < l[right]:
+    if right <= n and l[parent] < l[right]:
         parent = right
     if parent != i:
         l[parent],l[i]=l[i],l[parent]
