@@ -12,7 +12,7 @@ l=[-1,54,53,55,52,50]
 
 n=len(l)-1
 
-for i in range(n//2,-1,-1):
+for i in range(n//2,0,-1):
     heapify(l,n,i)
 
 print(l)
