@@ -1,6 +1,6 @@
 def __init__(self):
   self.t=[[-1]*(1002) for i in range(1002)]
-def knapSack(self,Weight, wt, val, n):
+def knapSack(self,W, wt, val, n):
   if W==0 or n==0:
     return 0
   if self.t[W][n]!=-1:
